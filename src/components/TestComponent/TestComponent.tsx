@@ -5,8 +5,13 @@ interface TestComponentProps {
   subject?: string
 }
 
-export const TestComponent: React.FC<TestComponentProps> = ({ greeting, subject }) => {
+export const TestComponent: React.FC<TestComponentProps> = ({
+  greeting,
+  subject
+}) => {
   return (
-    <div>{greeting}, {subject}!</div>
-  );
+    <div>
+      {greeting}, {subject}!
+    </div>
+  )
 }
