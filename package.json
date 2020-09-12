@@ -1,0 +1,56 @@
+{
+  "name": "mugi",
+  "version": "0.0.0",
+  "description": "A UI component library",
+  "main": "build/index.js",
+  "module": "build/index.es.js",
+  "jsnext:main": "build/index.es.js",
+  "scripts": {
+    "build": "rollup -c",
+    "lint": "standard",
+    "format": "prettier-standard --format",
+    "storybook": "start-storybook -p 9001 -c .storybook",
+    "build-storybook": "build-storybook -c .storybook -o .storybook-outn"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cmu-jsa/mugi.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/cmu-jsa/mugi/issues"
+  },
+  "homepage": "https://github.com/cmu-jsa/mugi#readme",
+  "devDependencies": {
+    "@babel/core": "^7.11.4",
+    "@storybook/react": "^6.0.21",
+    "@types/react": "^16.9.48",
+    "@types/react-dom": "^16.9.8",
+    "awesome-typescript-loader": "^5.2.1",
+    "babel-loader": "^8.1.0",
+    "prettier-standard": "^16.4.1",
+    "react-docgen-typescript-loader": "^3.7.2",
+    "react-docgen-typescript-webpack-plugin": "^1.1.0",
+    "rollup": "^2.26.8",
+    "rollup-plugin-commonjs": "^10.1.0",
+    "rollup-plugin-node-resolve": "^5.2.0",
+    "rollup-plugin-peer-deps-external": "^2.2.3",
+    "rollup-plugin-typescript2": "^0.27.2",
+    "standard": "^14.3.4",
+    "typescript": "^4.0.2"
+  },
+  "dependencies": {
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1"
+  },
+  "standard": {
+    "ignore": [
+      "node_modules/",
+      "build/"
+    ]
+  },
+  "engines": {
+    "node": ">=10.0.0"
+  }
+}
